@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leipzig Student Jobs</title>
+<style>
+  * { box-sizing: border-box }
+  body { margin: 0; background: #f3f6f3; color: #172b20; font: 1rem/1.55 system-ui, sans-serif }
+  main { width: min(100% - 2rem, 60rem); margin: 3rem auto }
+  h1 { font-size: clamp(2.25rem, 7vw, 4rem); line-height: 1; margin-bottom: .55em }
+  h2 { font-size: 1.2rem; margin: 0 }
+  a { color: #205538; text-underline-offset: .2em }
+  form { background: #dfebdf; padding: 1.25rem; border-radius: .8rem; margin: 1.5rem 0 }
+  label[for="q"] { display: block; font-weight: 700 }
+  .search { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0 1rem }
+  input[type="search"] { flex: 1 1 15rem; min-width: 0; border: 1px solid #678271; background: white }
+  input, button { font: inherit }
+  input[type="search"], button { border-radius: .4rem; padding: .6rem .8rem }
+  button { border: 0; background: #205538; color: white; cursor: pointer }
+  article { padding: 1.15rem; border: 1px solid #d3e0d5; border-radius: .8rem; background: white }
+  .results { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr)) }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: .25rem 1rem; margin-bottom: 0 }
+  dt { font-weight: 650 }
+  dd { margin: 0 }
+  footer { margin: 2rem 0 }
+  footer ul { padding-left: 1.25rem }
+  [hidden] { display: none !important }
+</style></head>
+<body><main>
+  <nav aria-label="Project navigation"><a href="../">All projects</a></nav>
+  <h1>Leipzig Student Jobs</h1>
+  <p>Find minijobs, casual shifts, and working-student jobs in Leipzig.</p>
+  <form method="get" action="./">
+    <label for="q">Search jobs</label>
+    <div class="search">
+      <input type="search" id="q" name="q" maxlength="120" value="" placeholder="e.g. events or warehouse">
+      <button type="submit">Search</button>
+    </div>
+    <label><input type="checkbox" name="english" value="1" > Show jobs tagged English</label>
+  </form>
+  <p><span id="count" aria-live="polite">6 found.</span> Saved listings from 2026-11-18. Check the job board for current openings.</p>
+  
+  <section class="results" aria-label="Job listings">
+    <article data-search="event and hospitality service leipzig · gastro · kurzfristige beschäftigung · deutsch flexible monday through sunday €15–€15.33" data-english="false">
+      <h2><a href="https://jobvermittlung.studentenwerk-leipzig.de/job/view/42730?fp=1">Event and hospitality service</a></h2>
+      <p>Leipzig · Gastro · Kurzfristige Beschäftigung · Deutsch</p>
+      <dl>
+        <dt>Pay</dt><dd>€15–€15.33</dd>
+        <dt>Hours</dt><dd>Flexible Monday through Sunday</dd>
+        <dt>Dates</dt><dd>ab 30.11.2026</dd>
+      </dl>
+    </article>
+    <article data-search="event logistics and stagehand leipzig · stagehand · kurzfristige beschäftigung · deutsch flexible monday through sunday €15–€15.33 plus shift premiums" data-english="false">
+      <h2><a href="https://jobvermittlung.studentenwerk-leipzig.de/job/view/42729?fp=1">Event logistics and stagehand</a></h2>
+      <p>Leipzig · Stagehand · Kurzfristige Beschäftigung · Deutsch</p>
+      <dl>
+        <dt>Pay</dt><dd>€15–€15.33 plus shift premiums</dd>
+        <dt>Hours</dt><dd>Flexible Monday through Sunday</dd>
+        <dt>Dates</dt><dd>ab 30.11.2026</dd>
+      </dl>
+    </article>
+    <article data-search="trade fair assistant leipzig · messe · kurzfristige beschäftigung · deutsch 10:00–17:00 €18" data-english="false">
+      <h2><a href="https://jobvermittlung.studentenwerk-leipzig.de/job/view/42726?fp=1">Trade fair assistant</a></h2>
+      <p>Leipzig · Messe · Kurzfristige Beschäftigung · Deutsch</p>
+      <dl>
+        <dt>Pay</dt><dd>€18</dd>
+        <dt>Hours</dt><dd>10:00–17:00</dd>
+        <dt>Dates</dt><dd>06.02.2027–14.02.2027</dd>
+      </dl>
+    </article>
+    <article data-search="packing assistant leipzig alt-west · verpackung · minijob · deutsch monday and friday, up to 10 hours/week €14" data-english="false">
+      <h2><a href="https://jobvermittlung.studentenwerk-leipzig.de/job/view/42715?fp=1">Packing assistant</a></h2>
+      <p>Leipzig Alt-West · Verpackung · Minijob · Deutsch</p>
+      <dl>
+        <dt>Pay</dt><dd>€14</dd>
+        <dt>Hours</dt><dd>Monday and Friday, up to 10 hours/week</dd>
+        <dt>Dates</dt><dd>ab 11.11.2026</dd>
+      </dl>
+    </article>
+    <article data-search="student it assistant leipzig · it · minijob · deutsch · englisch 43 hours/month €14" data-english="true">
+      <h2><a href="https://jobvermittlung.studentenwerk-leipzig.de/job/view/42701?fp=1">Student IT assistant</a></h2>
+      <p>Leipzig · IT · Minijob · Deutsch · Englisch</p>
+      <dl>
+        <dt>Pay</dt><dd>€14</dd>
+        <dt>Hours</dt><dd>43 hours/month</dd>
+        <dt>Dates</dt><dd>01.12.2026–31.12.2027</dd>
+      </dl>
+    </article>
+    <article data-search="passenger survey for deutsche bahn leipzig · kurzfristige beschäftigung · deutsch flexible by arrangement from €17.48 (€19.23 weekends/holidays)" data-english="false">
+      <h2><a href="https://jobvermittlung.studentenwerk-leipzig.de/job/view/42700?fp=1">Passenger survey for Deutsche Bahn</a></h2>
+      <p>Leipzig · Kurzfristige Beschäftigung · Deutsch</p>
+      <dl>
+        <dt>Pay</dt><dd>From €17.48 (€19.23 weekends/holidays)</dd>
+        <dt>Hours</dt><dd>Flexible by arrangement</dd>
+        <dt>Dates</dt><dd>15.11.2026–31.12.2027</dd>
+      </dl>
+    </article></section>
+  <footer><ul>
+    <li><a href="https://jobvermittlung.studentenwerk-leipzig.de/">Full Studentenwerk Leipzig job board</a></li>
+    <li><a href="https://www.studentenwerk-leipzig.de/en/bafoeg-financing/student-job-office/">Student registration guide</a></li>
+    <li><a href="https://www.make-it-in-germany.com/en/study-vocational-training/studying-in-germany/work">Work rules for international students</a></li>
+  </ul></footer>
+
+<p id="empty" hidden>No matches. Try a broader search or open the job board.</p>
+</main>
+<script>
+const aliases = {"events": "event messe trade stagehand seminar gastronomie catering", "warehouse": "lager logistik versand paket verpackung", "cleaning": "reinigung putz housekeeping", "kitchen": "küche spül gastro koch", "delivery": "liefer kurier zustell", "retail": "verkauf handel kasse", "tutoring": "nachhilfe unterricht", "weekend": "weekend wochenende samstag sonntag"};
+const form = document.querySelector("form");
+const cards = [...document.querySelectorAll("article")];
+function filterJobs() {
+  const terms = form.elements.q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const english = form.elements.english.checked;
+  let count = 0;
+  for (const card of cards) {
+    const matchesLanguage = !english || card.dataset.english === "true";
+    const matchesSearch = terms.every(term => {
+      const words = Object.hasOwn(aliases, term) ? aliases[term].split(" ") : [term];
+      return words.some(word => card.dataset.search.includes(word));
+    });
+    card.hidden = !(matchesLanguage && matchesSearch);
+    if (!card.hidden) count++;
+  }
+  document.getElementById("count").textContent = count + " found.";
+  document.getElementById("empty").hidden = count > 0;
+}
+form.addEventListener("input", filterJobs);
+form.addEventListener("submit", event => {
+  event.preventDefault();
+  filterJobs();
+});
+</script></body></html>
