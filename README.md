@@ -23,3 +23,7 @@ gunicorn --bind 127.0.0.1:8080 web:application
 ```
 
 Run it under your server's service manager and route your HTTPS reverse proxy to port 8080. The server needs outbound HTTPS access to the Studentenwerk Leipzig job board for live listings.
+
+## GitHub Pages layout
+
+The homepage lists projects. Leipzig Student Jobs lives at `/leipzig-jobs/` in the published site. To add another project, give it its own folder with an `index.html` and add a relative link to it on the homepage. The homepage and project folders are mirrored under `docs/` so either Pages publishing folder on `main` works.
